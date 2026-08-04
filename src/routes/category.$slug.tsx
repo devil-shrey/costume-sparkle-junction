@@ -51,8 +51,8 @@ function CategoryPage() {
       </header>
 
       <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4">
-        {category.costumes.map((item: { name: string }) => (
-          <CostumeCard key={item.name} name={item.name} image={category.image} />
+        {category.costumes.map((item: { name: string; image: string }) => (
+          <CostumeCard key={item.name} name={item.name} image={item.image} />
         ))}
       </div>
     </div>

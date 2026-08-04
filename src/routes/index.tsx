@@ -87,7 +87,7 @@ function Index() {
 
           <div className="mt-5 grid grid-cols-2 gap-4 md:grid-cols-4">
             {cat.costumes.slice(0, 4).map((item) => (
-              <CostumeCard key={item.name} name={item.name} image={cat.image} />
+              <CostumeCard key={item.name} name={item.name} image={item.image} />
             ))}
           </div>
         </section>
