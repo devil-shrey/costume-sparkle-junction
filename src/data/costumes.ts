@@ -1,9 +1,26 @@
-import mythological from "@/assets/cat-mythological.jpg";
-import kids from "@/assets/cat-kids.jpg";
-import royal from "@/assets/cat-royal.jpg";
-import professions from "@/assets/cat-professions.jpg";
-import animals from "@/assets/cat-animals.jpg";
-import dance from "@/assets/cat-dance.jpg";
+import catalogue from "./catalogue.json";
+
+/**
+ * Everything editable (categories, costume names, images, shop details) lives in
+ * `src/data/catalogue.json`. Images are referenced by filename; drop the file in
+ * `src/assets/` and name it in the JSON — no code change needed.
+ */
+
+const assetModules = import.meta.glob("../assets/*.{jpg,jpeg,png,webp,svg}", {
+  eager: true,
+  import: "default",
+}) as Record<string, string>;
+
+const assetsByFilename: Record<string, string> = Object.fromEntries(
+  Object.entries(assetModules).map(([path, url]) => [path.split("/").pop() as string, url]),
+);
+
+const FALLBACK_IMAGE = Object.values(assetsByFilename)[0] ?? "";
+
+function resolveImage(filename?: string, fallback: string = FALLBACK_IMAGE): string {
+  if (!filename) return fallback;
+  return assetsByFilename[filename] ?? fallback;
+}
 
 export type Costume = {
   name: string;
@@ -17,112 +34,37 @@ export type Category = {
   name: string;
   tagline: string;
   image: string;
-  costumes: { name: string }[];
+  costumes: { name: string; image: string }[];
 };
 
-export const categories: Category[] = [
-  {
-    slug: "mythological",
-    name: "Mythological",
-    tagline: "Gods, goddesses and epic characters for Janmashtami, Ramleela and school plays.",
-    image: mythological,
-    costumes: [
-      { name: "Little Krishna" },
-      { name: "Radha Rani" },
-      { name: "Lord Rama" },
-      { name: "Goddess Durga" },
-      { name: "Hanuman Ji" },
-      { name: "Lord Shiva" },
-      { name: "Sita Maiya" },
-      { name: "Narad Muni" },
-    ],
-  },
-  {
-    slug: "kids-fancy-dress",
-    name: "Kids Fancy Dress",
-    tagline: "Bright, comfy and camera-ready outfits for every fancy dress competition.",
-    image: kids,
-    costumes: [
-      { name: "Superhero Cape Set" },
-      { name: "Fairy Princess" },
-      { name: "Happy Clown" },
-      { name: "Space Astronaut" },
-      { name: "Pirate Captain" },
-      { name: "Magician Kid" },
-      { name: "Rainbow Ballerina" },
-      { name: "Little Chef Baker" },
-    ],
-  },
-  {
-    slug: "royal-historical",
-    name: "Royal & Historical",
-    tagline: "Maharaja sherwanis, queenly robes and regal turbans with full jewellery.",
-    image: royal,
-    costumes: [
-      { name: "Maharaja Sherwani" },
-      { name: "Rajput Queen" },
-      { name: "Mughal Emperor" },
-      { name: "Royal Guard" },
-      { name: "Shivaji Maharaj" },
-      { name: "Nawab of Awadh" },
-      { name: "Court Dancer" },
-      { name: "Rani Laxmibai" },
-    ],
-  },
-  {
-    slug: "professions",
-    name: "Professions",
-    tagline: "Doctor, police, chef, farmer and more — perfect for community helper themes.",
-    image: professions,
-    costumes: [
-      { name: "Doctor Coat Set" },
-      { name: "Police Officer" },
-      { name: "Master Chef" },
-      { name: "Indian Farmer" },
-      { name: "Fire Fighter" },
-      { name: "Air Hostess" },
-      { name: "Army Soldier" },
-      { name: "Postman" },
-    ],
-  },
-  {
-    slug: "animals-birds",
-    name: "Animals & Birds",
-    tagline: "Soft, playful animal suits sized for toddlers to teens.",
-    image: animals,
-    costumes: [
-      { name: "Roaring Lion" },
-      { name: "Dancing Peacock" },
-      { name: "Baby Elephant" },
-      { name: "Butterfly Wings" },
-      { name: "Jungle Tiger" },
-      { name: "Cheeky Monkey" },
-      { name: "Parrot Suit" },
-      { name: "Honey Bee" },
-    ],
-  },
-  {
-    slug: "dance-folk",
-    name: "Dance & Folk",
-    tagline: "Classical and folk costumes with matching jewellery and accessories.",
-    image: dance,
-    costumes: [
-      { name: "Bharatanatyam Set" },
-      { name: "Kathak Anarkali" },
-      { name: "Garba Chaniya Choli" },
-      { name: "Bhangra Kurta" },
-      { name: "Kuchipudi Costume" },
-      { name: "Lavani Nauvari" },
-      { name: "Bihu Mekhela" },
-      { name: "Odissi Costume" },
-    ],
-  },
-];
+type RawCategory = {
+  slug: string;
+  name: string;
+  tagline: string;
+  image?: string;
+  costumes: { name: string; image?: string }[];
+};
+
+export const shop = catalogue.shop;
+
+export const categories: Category[] = (catalogue.categories as RawCategory[]).map((cat) => {
+  const categoryImage = resolveImage(cat.image);
+  return {
+    slug: cat.slug,
+    name: cat.name,
+    tagline: cat.tagline,
+    image: categoryImage,
+    costumes: cat.costumes.map((item) => ({
+      name: item.name,
+      image: resolveImage(item.image, categoryImage),
+    })),
+  };
+});
 
 export const allCostumes: Costume[] = categories.flatMap((c) =>
   c.costumes.map((item) => ({
     name: item.name,
-    image: c.image,
+    image: item.image,
     category: c.name,
     categorySlug: c.slug,
   })),
@@ -140,7 +82,7 @@ export function searchCostumes(query: string): Costume[] {
   );
 }
 
-export const WHATSAPP_NUMBER = "919876543210";
+export const WHATSAPP_NUMBER = shop.whatsappNumber;
 export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-  "Hi Costume Junctions! I would like to enquire about a costume on rent.",
+  shop.whatsappMessage,
 )}`;
