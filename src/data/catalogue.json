@@ -11,99 +11,51 @@
   },
   "categories": [
     {
-      "slug": "mythological",
-      "name": "Mythological",
-      "tagline": "Gods, goddesses and epic characters for Janmashtami, Ramleela and school plays.",
-      "image": "cat-mythological.jpg",
+      "slug": "accessories",
+      "name": "Accessories",
+      "tagline": "Masks, wings and props to complete every costume look.",
+      "image": "bedhiya.png",
       "costumes": [
-        { "name": "Little Krishna" },
-        { "name": "Radha Rani" },
-        { "name": "Lord Rama" },
-        { "name": "Goddess Durga" },
-        { "name": "Hanuman Ji" },
-        { "name": "Lord Shiva" },
-        { "name": "Sita Maiya" },
-        { "name": "Narad Muni" }
+        { "name": "bedhiya", "image": "bedhiya.png" },
+        { "name": "bird wings", "image": "bird wings.jpg" },
+        { "name": "butterfly Wings", "image": "butterfly Wings.jpg" },
+        { "name": "kathhakali mask", "image": "kathhakali mask.jpg" },
+        { "name": "Sheshnaag", "image": "Sheshnaag.jpg" },
+        { "name": "wings_", "image": "wings_.jpg" }
       ]
     },
     {
-      "slug": "kids-fancy-dress",
-      "name": "Kids Fancy Dress",
-      "tagline": "Bright, comfy and camera-ready outfits for every fancy dress competition.",
-      "image": "cat-kids.jpg",
+      "slug": "patriotic",
+      "name": "Patriotic",
+      "tagline": "Bold national looks for independence day, school events and themed parties.",
+      "image": "Army.jpg",
       "costumes": [
-        { "name": "Superhero Cape Set" },
-        { "name": "Fairy Princess" },
-        { "name": "Happy Clown" },
-        { "name": "Space Astronaut" },
-        { "name": "Pirate Captain" },
-        { "name": "Magician Kid" },
-        { "name": "Rainbow Ballerina" },
-        { "name": "Little Chef Baker" }
+        { "name": "Army", "image": "Army.jpg" },
+        { "name": "British", "image": "British.jpg" },
+        { "name": "Cricket", "image": "Cricket.jpg" },
+        { "name": "Gandhi", "image": "Gandhi.jpg" },
+        { "name": "Navy", "image": "Navy.png" },
+        { "name": "Police", "image": "Police.jpg" },
+        { "name": "RedAndWhiteSaree", "image": "RedAndWhiteSaree.jpg" },
+        { "name": "TricolourDress1", "image": "TricolourDress1.jpg" },
+        { "name": "TricolourDress2", "image": "TricolourDress2.jpg" },
+        { "name": "TricolourJacket", "image": "TricolourJacket.jpg" }
       ]
     },
     {
-      "slug": "royal-historical",
-      "name": "Royal & Historical",
-      "tagline": "Maharaja sherwanis, queenly robes and regal turbans with full jewellery.",
-      "image": "cat-royal.jpg",
+      "slug": "superhero-kids",
+      "name": "Superhero Kids",
+      "tagline": "Heroic costumes with action-ready energy for children and teens.",
+      "image": "Batman.jpg",
       "costumes": [
-        { "name": "Maharaja Sherwani" },
-        { "name": "Rajput Queen" },
-        { "name": "Mughal Emperor" },
-        { "name": "Royal Guard" },
-        { "name": "Shivaji Maharaj" },
-        { "name": "Nawab of Awadh" },
-        { "name": "Court Dancer" },
-        { "name": "Rani Laxmibai" }
-      ]
-    },
-    {
-      "slug": "professions",
-      "name": "Professions",
-      "tagline": "Doctor, police, chef, farmer and more — perfect for community helper themes.",
-      "image": "cat-professions.jpg",
-      "costumes": [
-        { "name": "Doctor Coat Set" },
-        { "name": "Police Officer" },
-        { "name": "Master Chef" },
-        { "name": "Indian Farmer" },
-        { "name": "Fire Fighter" },
-        { "name": "Air Hostess" },
-        { "name": "Army Soldier" },
-        { "name": "Postman" }
-      ]
-    },
-    {
-      "slug": "animals-birds",
-      "name": "Animals & Birds",
-      "tagline": "Soft, playful animal suits sized for toddlers to teens.",
-      "image": "cat-animals.jpg",
-      "costumes": [
-        { "name": "Roaring Lion" },
-        { "name": "Dancing Peacock" },
-        { "name": "Baby Elephant" },
-        { "name": "Butterfly Wings" },
-        { "name": "Jungle Tiger" },
-        { "name": "Cheeky Monkey" },
-        { "name": "Parrot Suit" },
-        { "name": "Honey Bee" }
-      ]
-    },
-    {
-      "slug": "dance-folk",
-      "name": "Dance & Folk",
-      "tagline": "Classical and folk costumes with matching jewellery and accessories.",
-      "image": "cat-dance.jpg",
-      "costumes": [
-        { "name": "Bharatanatyam Set" },
-        { "name": "Kathak Anarkali" },
-        { "name": "Garba Chaniya Choli" },
-        { "name": "Bhangra Kurta" },
-        { "name": "Kuchipudi Costume" },
-        { "name": "Lavani Nauvari" },
-        { "name": "Bihu Mekhela" },
-        { "name": "Odissi Costume" }
+        { "name": "Astronaut1", "image": "Astronaut1.png" },
+        { "name": "Astronaut2", "image": "Astronaut2.jpg" },
+        { "name": "Batman", "image": "Batman.jpg" },
+        { "name": "CaptainAmerica", "image": "CaptainAmerica.jpg" },
+        { "name": "Hulk", "image": "Hulk.jpg" },
+        { "name": "Ironman", "image": "Ironman.jpg" },
+        { "name": "Spiderman", "image": "Spiderman.jpg" },
+        { "name": "Superman", "image": "Superman.jpg" }
       ]
     }
   ]

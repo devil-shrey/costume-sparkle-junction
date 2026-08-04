@@ -6,20 +6,38 @@ import catalogue from "./catalogue.json";
  * `src/assets/` and name it in the JSON — no code change needed.
  */
 
-const assetModules = import.meta.glob("../assets/*.{jpg,jpeg,png,webp,svg}", {
+const assetModules = import.meta.glob("../assets/**/*.{jpg,jpeg,png,webp,svg}", {
   eager: true,
   import: "default",
 }) as Record<string, string>;
 
+const assetEntries = Object.entries(assetModules).map(([path, url]) => {
+  const fileName = path.split("/").pop() ?? path;
+  const extensionIndex = fileName.lastIndexOf(".");
+  const baseName = extensionIndex >= 0 ? fileName.slice(0, extensionIndex) : fileName;
+
+  return { fileName, baseName, url };
+});
+
 const assetsByFilename: Record<string, string> = Object.fromEntries(
-  Object.entries(assetModules).map(([path, url]) => [path.split("/").pop() as string, url]),
+  assetEntries.map(({ fileName, url }) => [fileName, url]),
 );
 
-const FALLBACK_IMAGE = Object.values(assetsByFilename)[0] ?? "";
+const assetsByBaseName: Record<string, string> = Object.fromEntries(
+  assetEntries.map(({ baseName, url }) => [baseName, url]),
+);
+
+const FALLBACK_IMAGE = assetEntries[0]?.url ?? "";
 
 function resolveImage(filename?: string, fallback: string = FALLBACK_IMAGE): string {
   if (!filename) return fallback;
-  return assetsByFilename[filename] ?? fallback;
+
+  const normalized = filename.trim();
+  if (!normalized) return fallback;
+
+  const candidateName = normalized.split("/").pop()?.split("\\").pop() ?? normalized;
+
+  return assetsByFilename[candidateName] ?? assetsByBaseName[candidateName] ?? fallback;
 }
 
 export type Costume = {
@@ -56,7 +74,7 @@ export const categories: Category[] = (catalogue.categories as RawCategory[]).ma
     image: categoryImage,
     costumes: cat.costumes.map((item) => ({
       name: item.name,
-      image: resolveImage(item.image, categoryImage),
+      image: resolveImage(item.name ?? item.image, categoryImage),
     })),
   };
 });
