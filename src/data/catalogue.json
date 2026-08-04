@@ -1,0 +1,110 @@
+{
+  "shop": {
+    "name": "Costume Junctions",
+    "domain": "thecostumejunctions.in",
+    "whatsappNumber": "919876543210",
+    "whatsappMessage": "Hi Costume Junctions! I would like to enquire about a costume on rent.",
+    "phone": "+91 98765 43210",
+    "email": "hello@thecostumejunctions.in",
+    "address": "Shop 14, MG Road Market, Pune 411001",
+    "hours": "Open daily · 10 AM – 9 PM"
+  },
+  "categories": [
+    {
+      "slug": "mythological",
+      "name": "Mythological",
+      "tagline": "Gods, goddesses and epic characters for Janmashtami, Ramleela and school plays.",
+      "image": "cat-mythological.jpg",
+      "costumes": [
+        { "name": "Little Krishna" },
+        { "name": "Radha Rani" },
+        { "name": "Lord Rama" },
+        { "name": "Goddess Durga" },
+        { "name": "Hanuman Ji" },
+        { "name": "Lord Shiva" },
+        { "name": "Sita Maiya" },
+        { "name": "Narad Muni" }
+      ]
+    },
+    {
+      "slug": "kids-fancy-dress",
+      "name": "Kids Fancy Dress",
+      "tagline": "Bright, comfy and camera-ready outfits for every fancy dress competition.",
+      "image": "cat-kids.jpg",
+      "costumes": [
+        { "name": "Superhero Cape Set" },
+        { "name": "Fairy Princess" },
+        { "name": "Happy Clown" },
+        { "name": "Space Astronaut" },
+        { "name": "Pirate Captain" },
+        { "name": "Magician Kid" },
+        { "name": "Rainbow Ballerina" },
+        { "name": "Little Chef Baker" }
+      ]
+    },
+    {
+      "slug": "royal-historical",
+      "name": "Royal & Historical",
+      "tagline": "Maharaja sherwanis, queenly robes and regal turbans with full jewellery.",
+      "image": "cat-royal.jpg",
+      "costumes": [
+        { "name": "Maharaja Sherwani" },
+        { "name": "Rajput Queen" },
+        { "name": "Mughal Emperor" },
+        { "name": "Royal Guard" },
+        { "name": "Shivaji Maharaj" },
+        { "name": "Nawab of Awadh" },
+        { "name": "Court Dancer" },
+        { "name": "Rani Laxmibai" }
+      ]
+    },
+    {
+      "slug": "professions",
+      "name": "Professions",
+      "tagline": "Doctor, police, chef, farmer and more — perfect for community helper themes.",
+      "image": "cat-professions.jpg",
+      "costumes": [
+        { "name": "Doctor Coat Set" },
+        { "name": "Police Officer" },
+        { "name": "Master Chef" },
+        { "name": "Indian Farmer" },
+        { "name": "Fire Fighter" },
+        { "name": "Air Hostess" },
+        { "name": "Army Soldier" },
+        { "name": "Postman" }
+      ]
+    },
+    {
+      "slug": "animals-birds",
+      "name": "Animals & Birds",
+      "tagline": "Soft, playful animal suits sized for toddlers to teens.",
+      "image": "cat-animals.jpg",
+      "costumes": [
+        { "name": "Roaring Lion" },
+        { "name": "Dancing Peacock" },
+        { "name": "Baby Elephant" },
+        { "name": "Butterfly Wings" },
+        { "name": "Jungle Tiger" },
+        { "name": "Cheeky Monkey" },
+        { "name": "Parrot Suit" },
+        { "name": "Honey Bee" }
+      ]
+    },
+    {
+      "slug": "dance-folk",
+      "name": "Dance & Folk",
+      "tagline": "Classical and folk costumes with matching jewellery and accessories.",
+      "image": "cat-dance.jpg",
+      "costumes": [
+        { "name": "Bharatanatyam Set" },
+        { "name": "Kathak Anarkali" },
+        { "name": "Garba Chaniya Choli" },
+        { "name": "Bhangra Kurta" },
+        { "name": "Kuchipudi Costume" },
+        { "name": "Lavani Nauvari" },
+        { "name": "Bihu Mekhela" },
+        { "name": "Odissi Costume" }
+      ]
+    }
+  ]
+}
