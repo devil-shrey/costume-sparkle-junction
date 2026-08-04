@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { categories, WHATSAPP_LINK } from "@/data/costumes";
+import { categories, shop, WHATSAPP_LINK } from "@/data/costumes";
 
 export function SiteFooter() {
   return (
@@ -59,18 +59,18 @@ export function SiteFooter() {
         <div>
           <h3 className="font-display text-lg">Reach Us</h3>
           <address className="mt-3 space-y-2 text-sm not-italic text-muted-foreground">
-            <p>Shop 14, MG Road Market, Pune 411001</p>
+            <p>{shop.address}</p>
             <p>
-              <a href="tel:+919876543210" className="hover:text-primary">
-                +91 98765 43210
+              <a href={`tel:${shop.phone.replace(/\s/g, "")}`} className="hover:text-primary">
+                {shop.phone}
               </a>
             </p>
             <p>
-              <a href="mailto:hello@thecostumejunctions.in" className="hover:text-primary">
-                hello@thecostumejunctions.in
+              <a href={`mailto:${shop.email}`} className="hover:text-primary">
+                {shop.email}
               </a>
             </p>
-            <p>Open daily · 10 AM – 9 PM</p>
+            <p>{shop.hours}</p>
           </address>
         </div>
       </div>

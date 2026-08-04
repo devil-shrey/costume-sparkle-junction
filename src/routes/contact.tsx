@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
-import { WHATSAPP_LINK } from "@/data/costumes";
+import { shop, WHATSAPP_LINK } from "@/data/costumes";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -41,14 +41,10 @@ function ContactPage() {
 
       <ul className="mt-8 space-y-4">
         {[
-          { icon: MapPin, label: "Shop 14, MG Road Market, Pune 411001" },
-          { icon: Phone, label: "+91 98765 43210", href: "tel:+919876543210" },
-          {
-            icon: Mail,
-            label: "hello@thecostumejunctions.in",
-            href: "mailto:hello@thecostumejunctions.in",
-          },
-          { icon: Clock, label: "Open daily, 10 AM – 9 PM" },
+          { icon: MapPin, label: shop.address },
+          { icon: Phone, label: shop.phone, href: `tel:${shop.phone.replace(/\s/g, "")}` },
+          { icon: Mail, label: shop.email, href: `mailto:${shop.email}` },
+          { icon: Clock, label: shop.hours },
         ].map(({ icon: Icon, label, href }) => (
           <li
             key={label}
