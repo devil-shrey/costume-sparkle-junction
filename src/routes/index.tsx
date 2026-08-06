@@ -52,7 +52,7 @@ function Index() {
             </div>
             <img
               src={heroImage}
-              alt="Happy customers wearing a variety of colourful costumes at a costume rental shop"
+              alt="Indian families and kids wearing colourful rented costumes including sarees, sherwanis, lehengas, Krishna and patriotic looks"
               width={1600}
               height={900}
               className="h-full w-full object-cover"
