@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
-import { MapPin } from "lucide-react";
+import { ChevronDown, MapPin, Menu, Search, Sparkles, X } from "lucide-react";
 import { categories, shop } from "@/data/costumes";
 
 export function SiteHeader() {
