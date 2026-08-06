@@ -31,36 +31,29 @@ function Index() {
           <div className="grid items-center gap-6 md:grid-cols-2">
             <div className="p-8 text-primary-foreground md:p-10">
               <p className="inline-flex items-center gap-2 rounded-full bg-background/20 px-3 py-1 text-sm font-semibold">
-                <CalendarDays className="h-4 w-4" /> Upcoming Festival
+                Thousands of costumes on rent
               </p>
               <h1 className="mt-4 text-4xl leading-tight md:text-5xl">
-                Navratri &amp; Garba Nights are here!
+                Celebrate every version of yourself with us — and make the brightest impression on any occasion.
               </h1>
               <p className="mt-3 max-w-md text-base opacity-95">
-                Book your chaniya choli, kediyu and dandiya accessories early. Fresh stock, all
-                sizes, ironed and ready — nine nights of colour sorted.
+                From festivals and themed parties to school plays and fancy-dress competitions, find the perfect look
+                for kids and adults. Fresh stock, all sizes, ironed and ready.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
-                <Link
-                  to="/category/$slug"
-                  params={{ slug: "dance-folk" }}
-                  className="inline-flex items-center gap-2 rounded-full bg-background px-5 py-3 font-semibold text-primary shadow-soft"
-                >
-                  Shop Festival Looks <ArrowRight className="h-4 w-4" />
-                </Link>
                 <a
                   href={WHATSAPP_LINK}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border-2 border-primary-foreground px-5 py-3 font-semibold"
+                  className="inline-flex items-center gap-2 rounded-full bg-background px-5 py-3 font-semibold text-primary shadow-soft"
                 >
                   Book on WhatsApp
                 </a>
               </div>
             </div>
             <img
-              src={festivalHero}
-              alt="Navratri Garba celebration with colourful costumes"
+              src={heroImage}
+              alt="Happy customers wearing a variety of colourful costumes at a costume rental shop"
               width={1600}
               height={900}
               className="h-full w-full object-cover"
