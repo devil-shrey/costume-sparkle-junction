@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
-import { ChevronDown, Menu, Search, Sparkles, X } from "lucide-react";
-import { categories } from "@/data/costumes";
+import { ChevronDown, MapPin, Menu, Search, Sparkles, X } from "lucide-react";
+import { categories, shop } from "@/data/costumes";
 
 export function SiteHeader() {
   const navigate = useNavigate();
@@ -28,7 +28,7 @@ export function SiteHeader() {
               Costume Junctions
             </span>
             <span className="block text-xs tracking-wide text-muted-foreground">
-              thecostumejunctions.in
+              {shop.domain}
             </span>
           </span>
         </Link>
@@ -104,6 +104,15 @@ export function SiteHeader() {
           >
             Contact Us
           </Link>
+
+          <a
+            href="https://maps.app.goo.gl/EnAkXwgF7h7shL8v7"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-1 font-semibold text-foreground transition-colors hover:text-primary"
+          >
+            <MapPin className="h-4 w-4" /> Location
+          </a>
 
           <form onSubmit={onSearch} className="relative md:w-56">
             <input
