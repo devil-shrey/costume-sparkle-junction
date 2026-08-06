@@ -28,7 +28,7 @@ export function SiteHeader() {
               Costume Junctions
             </span>
             <span className="block text-xs tracking-wide text-muted-foreground">
-              thecostumejunctions.in
+              {shop.domain}
             </span>
           </span>
         </Link>
