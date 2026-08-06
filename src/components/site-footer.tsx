@@ -76,7 +76,7 @@ export function SiteFooter() {
       </div>
 
       <div className="border-t border-border py-5 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} thecostumejunctions.in · All rights reserved
+        © {new Date().getFullYear()} {shop.domain} · All rights reserved
       </div>
     </footer>
   );
