@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, CalendarDays } from "lucide-react";
-import festivalHero from "@/assets/festival-hero.jpg";
+import { ArrowRight } from "lucide-react";
+import heroImage from "@/assets/hero-costume-shop.jpg";
 import { categories, WHATSAPP_LINK } from "@/data/costumes";
 import { CostumeCard } from "@/components/costume-card";
 
