@@ -37,8 +37,7 @@ function Index() {
                 Celebrate every version of yourself with us — and make the brightest impression on any occasion.
               </h1>
               <p className="mt-3 max-w-md text-base opacity-95">
-                From festivals and themed parties to school plays and fancy-dress competitions, find the perfect look
-                for kids and adults. Fresh stock, all sizes, ironed and ready.
+                From Indian festivals and weddings to school plays, themed parties and fancy-dress competitions, find the perfect look for kids and adults. Fresh stock, all sizes, ironed and ready.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
