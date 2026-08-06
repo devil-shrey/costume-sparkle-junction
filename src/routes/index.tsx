@@ -7,16 +7,16 @@ import { CostumeCard } from "@/components/costume-card";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Costume Junctions — Costume Rentals for Every Festival" },
+      { title: "Costume Junctions — Costume Rentals for Every Occasion" },
       {
         name: "description",
         content:
-          "Rent mythological, fancy dress, royal, folk dance and animal costumes at Costume Junctions. Browse by category and book on WhatsApp.",
+          "Rent mythological, fancy dress, royal, folk dance and animal costumes at Costume Junctions. Browse by category and book on WhatsApp for any occasion.",
       },
-      { property: "og:title", content: "Costume Junctions — Costume Rentals" },
+      { property: "og:title", content: "Costume Junctions — Costume Rentals for Every Occasion" },
       {
         property: "og:description",
-        content: "Thousands of costumes on rent for festivals, plays and fancy dress competitions.",
+        content: "Thousands of costumes on rent for festivals, plays, parties and fancy dress competitions.",
       },
     ],
   }),
