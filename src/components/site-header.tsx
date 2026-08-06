@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
-import { ChevronDown, Menu, Search, Sparkles, X } from "lucide-react";
-import { categories } from "@/data/costumes";
+import { MapPin } from "lucide-react";
+import { categories, shop } from "@/data/costumes";
 
 export function SiteHeader() {
   const navigate = useNavigate();
