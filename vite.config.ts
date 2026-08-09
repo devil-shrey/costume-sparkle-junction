@@ -21,8 +21,9 @@ const staticPages = [
 export default defineConfig({
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
-    // nitro/vite builds from this
-    server: { entry: "server" },
+    // nitro/vite builds from this. The static (GitHub Pages) build uses the default entry so
+    // the prerenderer can boot its own preview server.
+    ...(isStatic ? {} : { server: { entry: "server" } }),
     ...(isStatic
       ? {
           prerender: { enabled: true, crawlLinks: true, autoSubfolderIndex: true },
