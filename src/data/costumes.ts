@@ -11,6 +11,13 @@ const assetModules = import.meta.glob("../assets/**/*.{jpg,jpeg,png,webp,svg}", 
   import: "default",
 }) as Record<string, string>;
 
+const normalizeKey = (value: string) =>
+  value
+    .trim()
+    .toLowerCase()
+    .replace(/[\s_]+/g, "-")
+    .replace(/-+/g, "-");
+
 const assetEntries = Object.entries(assetModules).map(([path, url]) => {
   const fileName = path.split("/").pop() ?? path;
   const extensionIndex = fileName.lastIndexOf(".");
@@ -20,11 +27,11 @@ const assetEntries = Object.entries(assetModules).map(([path, url]) => {
 });
 
 const assetsByFilename: Record<string, string> = Object.fromEntries(
-  assetEntries.map(({ fileName, url }) => [fileName, url]),
+  assetEntries.map(({ fileName, url }) => [normalizeKey(fileName), url]),
 );
 
 const assetsByBaseName: Record<string, string> = Object.fromEntries(
-  assetEntries.map(({ baseName, url }) => [baseName, url]),
+  assetEntries.map(({ baseName, url }) => [normalizeKey(baseName), url]),
 );
 
 const FALLBACK_IMAGE = assetEntries[0]?.url ?? "";
@@ -35,10 +42,11 @@ function resolveImage(filename?: string, fallback: string = FALLBACK_IMAGE): str
   const normalized = filename.trim();
   if (!normalized) return fallback;
 
-  const candidateName = normalized.split("/").pop()?.split("\\").pop() ?? normalized;
+  const candidateName = normalizeKey(normalized.split("/").pop()?.split("\\").pop() ?? normalized);
 
   return assetsByFilename[candidateName] ?? assetsByBaseName[candidateName] ?? fallback;
 }
+
 
 export type Costume = {
   name: string;
