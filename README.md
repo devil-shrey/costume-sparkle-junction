@@ -1,6 +1,6 @@
 # Costume Junctions
 
-i am planning to build a website for a costume rent shop. The name of the shop is "Costume Junctions". i want a basic coulful theme. the header should have a name of the website "thecostumejunctions.in". Along with name and logo, it should have different components like 'Home', 'Categories' etc. It should also have a search box which would search the relevant costumes and show the list in the result page. In the body section of the page, it should highlight the upcoming festival. below that, it should list down all the categories one below the other in such a way that it should have a category name and below that 3-4 costume pictures in a row belonging to that category. end of the row should have 'View All' link. On the click of this link a page should open which should list down all the pictures belonging to that category. Below the picture, Name of the costume should appear. The similar category page should appear once the user selects the category from the Categories dropdown in the header. The site should also provide the facility to contact through whatsapp. Also, all the basic links like About Us, Contact Us should be available in the footer of the website.
+The web application provides necessary information to rent a costume from Costume Junctions shop in Pune.
 
 This project was built with [Lovable](https://lovable.dev).
 
