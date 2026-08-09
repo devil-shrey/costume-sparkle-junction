@@ -16,46 +16,46 @@
       "tagline": "Masks, wings and props to complete every costume look.",
       "image": "bedhiya.png",
       "costumes": [
-        { "name": "bedhiya", "image": "bedhiya.png" },
-        { "name": "bird wings", "image": "bird wings.jpg" },
-        { "name": "butterfly Wings", "image": "butterfly Wings.jpg" },
-        { "name": "kathhakali mask", "image": "kathhakali mask.jpg" },
-        { "name": "Sheshnaag", "image": "Sheshnaag.jpg" },
-        { "name": "wings_", "image": "wings_.jpg" }
+        { "name": "Bedhiya", "image": "bedhiya.png" },
+        { "name": "Bird Wings", "image": "bird-wings.jpg" },
+        { "name": "Butterfly Wings", "image": "butterfly-wings.jpg" },
+        { "name": "Kathakali Mask", "image": "kathhakali-mask.jpg" },
+        { "name": "Sheshnaag", "image": "sheshnaag.jpg" },
+        { "name": "Fairy Wings", "image": "wings.jpg" }
       ]
     },
     {
       "slug": "patriotic",
       "name": "Patriotic",
       "tagline": "Bold national looks for independence day, school events and themed parties.",
-      "image": "Army.jpg",
+      "image": "army.jpg",
       "costumes": [
-        { "name": "Army", "image": "Army.jpg" },
-        { "name": "British", "image": "British.jpg" },
-        { "name": "Cricket", "image": "Cricket.jpg" },
-        { "name": "Gandhi", "image": "Gandhi.jpg" },
-        { "name": "Navy", "image": "Navy.png" },
-        { "name": "Police", "image": "Police.jpg" },
-        { "name": "RedAndWhiteSaree", "image": "RedAndWhiteSaree.jpg" },
-        { "name": "TricolourDress1", "image": "TricolourDress1.jpg" },
-        { "name": "TricolourDress2", "image": "TricolourDress2.jpg" },
-        { "name": "TricolourJacket", "image": "TricolourJacket.jpg" }
+        { "name": "Army", "image": "army.jpg" },
+        { "name": "British", "image": "british.jpg" },
+        { "name": "Cricket", "image": "cricket.jpg" },
+        { "name": "Gandhi", "image": "gandhi.jpg" },
+        { "name": "Navy", "image": "navy.png" },
+        { "name": "Police", "image": "police.jpg" },
+        { "name": "Red And White Saree", "image": "redandwhitesaree.jpg" },
+        { "name": "Tricolour Dress 1", "image": "tricolourdress1.jpg" },
+        { "name": "Tricolour Dress 2", "image": "tricolourdress2.jpg" },
+        { "name": "Tricolour Jacket", "image": "tricolourjacket.jpg" }
       ]
     },
     {
       "slug": "superhero-kids",
       "name": "Superhero Kids",
       "tagline": "Heroic costumes with action-ready energy for children and teens.",
-      "image": "Batman.jpg",
+      "image": "batman.jpg",
       "costumes": [
-        { "name": "Astronaut1", "image": "Astronaut1.png" },
-        { "name": "Astronaut2", "image": "Astronaut2.jpg" },
-        { "name": "Batman", "image": "Batman.jpg" },
-        { "name": "CaptainAmerica", "image": "CaptainAmerica.jpg" },
-        { "name": "Hulk", "image": "Hulk.jpg" },
-        { "name": "Ironman", "image": "Ironman.jpg" },
-        { "name": "Spiderman", "image": "Spiderman.jpg" },
-        { "name": "Superman", "image": "Superman.jpg" }
+        { "name": "Astronaut 1", "image": "astronaut1.png" },
+        { "name": "Astronaut 2", "image": "astronaut2.jpg" },
+        { "name": "Batman", "image": "batman.jpg" },
+        { "name": "Captain America", "image": "captainamerica.jpg" },
+        { "name": "Hulk", "image": "hulk.jpg" },
+        { "name": "Ironman", "image": "ironman.jpg" },
+        { "name": "Spiderman", "image": "spiderman.jpg" },
+        { "name": "Superman", "image": "superman.jpg" }
       ]
     }
   ]
