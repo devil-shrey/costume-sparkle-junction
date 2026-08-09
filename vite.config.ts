@@ -31,5 +31,5 @@ export default defineConfig({
         }
       : {}),
   },
-  ...(isStatic ? { nitro: { preset: "static" as const } } : {}),
+  ...(isStatic ? { nitro: false as const } : {}),
 });
