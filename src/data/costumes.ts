@@ -82,7 +82,7 @@ export const categories: Category[] = (catalogue.categories as RawCategory[]).ma
     image: categoryImage,
     costumes: cat.costumes.map((item) => ({
       name: item.name,
-      image: resolveImage(item.name ?? item.image, categoryImage),
+      image: resolveImage(item.image ?? item.name, categoryImage),
     })),
   };
 });
