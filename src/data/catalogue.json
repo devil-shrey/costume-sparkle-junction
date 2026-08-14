@@ -6,8 +6,8 @@
     "whatsappMessage": "Hi Costume Junctions! I would like to enquire about a costume on rent.",
     "phone": "+918698780608",
     "email": "costumejunctions@gmail.com",
-    "address": "405, Crossroads, Shankar Kalat Nagar, Wakad, Pune - 411057",
-    "hours": "Open daily · 10 AM – 9 PM"
+    "address": "405, Crossroads, Bhumkar chowk, Shankar Kalat Nagar, Wakad, Pune - 411057",
+    "hours": "Open daily · 10 AM – 3 PM, 5 PM - 9 PM"
   },
   "categories": [
     {
@@ -49,7 +49,7 @@
       "image": "batman.jpg",
       "costumes": [
         { "name": "Astronaut 1", "image": "astronaut1.png" },
-        { "name": "Astronaut 2", "image": "astronaut2.jpg" },
+        { "name": "Robot", "image": "astronaut2.jpg" },
         { "name": "Batman", "image": "batman.jpg" },
         { "name": "Captain America", "image": "captainamerica.jpg" },
         { "name": "Hulk", "image": "hulk.jpg" },
