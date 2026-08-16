@@ -7,7 +7,7 @@
     "phone": "+918698780608",
     "email": "costumejunctions@gmail.com",
     "address": "405, Crossroads, Bhumkar chowk, Shankar Kalat Nagar, Wakad, Pune - 411057",
-    "hours": "Open daily · 10 AM – 3 PM, 5 PM - 9 PM"
+    "hours": "Open daily · 10:30AM – 3PM, 5:30PM - 7:30PM"
   },
   "categories": [
     {
@@ -17,10 +17,22 @@
       "image": "bedhiya.png",
       "costumes": [
         { "name": "Bedhiya", "image": "bedhiya.png" },
+        { "name": "Bajubandh", "image": "Bajubandh.png" },
         { "name": "Bird Wings", "image": "bird-wings.jpg" },
         { "name": "Butterfly Wings", "image": "butterfly-wings.jpg" },
+        { "name": "Ganesha Mask cloth", "image": "Ganesha-mask-cloth.jpg" },
+        { "name": "Kamar patta", "image": "Kamar-patta.jpg" },
         { "name": "Kathakali Mask", "image": "kathhakali-mask.jpg" },
+        { "name": "Krishna Mukut", "image": "krishna-mukut.png" },
+        { "name": "LED Mask", "image": "LED-mask.png" },
+        { "name": "Mask", "image": "Mask.png" },
+        { "name": "Moti Mala three layered", "image": "moti-Mala-three-layered.png" },
+        { "name": "Mukut", "image": "Mukut.png" },
+        { "name": "Police stik with Gun case", "image": "Police-stik-with-Gun-case.png" },
         { "name": "Sheshnaag", "image": "sheshnaag.jpg" },
+        { "name": "Single layers moti Mala", "image": "single-layers-moti-Mala.png" },
+        { "name": "Sword with Dhaal", "image": "Sword-with-Dhaal.png" },
+        { "name": "Thor hammer", "image": "Thor-hammer.png" },
         { "name": "Fairy Wings", "image": "wings.jpg" }
       ]
     },
@@ -31,15 +43,16 @@
       "image": "army.jpg",
       "costumes": [
         { "name": "Army", "image": "army.jpg" },
-        { "name": "British", "image": "british.jpg" },
-        { "name": "Cricket", "image": "cricket.jpg" },
+        { "name": "Mangal Pande", "image": "Mangal-pande.png" },
         { "name": "Gandhi", "image": "gandhi.jpg" },
         { "name": "Navy", "image": "navy.png" },
         { "name": "Police", "image": "police.jpg" },
-        { "name": "Red And White Saree", "image": "redandwhitesaree.jpg" },
-        { "name": "Tricolour Dress 1", "image": "tricolourdress1.jpg" },
-        { "name": "Tricolour Dress 2", "image": "tricolourdress2.jpg" },
-        { "name": "Tricolour Jacket", "image": "tricolourjacket.jpg" }
+        { "name": "Red And White Saree", "image": "redandwhitesaree.png" },
+        { "name": "Bal Gangadhar Tilak", "image": "Bal-Gangadhar-Tilak.jpg" },
+        { "name": "Gandhiji", "image": "Gandhiji.png" },
+        { "name": "Harem Top", "image": "harem-top.png" },
+        { "name": "Tricolour Jacket", "image": "tricolour-jacket.png" },
+        { "name": "Jhansi Rani Lakshmi Bai", "image": "Jhansi-Rani-Lakshmi-Bai.png" }
       ]
     },
     {
@@ -48,14 +61,90 @@
       "tagline": "Heroic costumes with action-ready energy for children and teens.",
       "image": "batman.jpg",
       "costumes": [
-        { "name": "Astronaut 1", "image": "astronaut1.png" },
-        { "name": "Robot", "image": "astronaut2.jpg" },
+        { "name": "Astronaut", "image": "astronaut.png" },
+        { "name": "Robot", "image": "robot.jpg" },
         { "name": "Batman", "image": "batman.jpg" },
         { "name": "Captain America", "image": "captainamerica.jpg" },
         { "name": "Hulk", "image": "hulk.jpg" },
         { "name": "Ironman", "image": "ironman.jpg" },
         { "name": "Spiderman", "image": "spiderman.jpg" },
+        { "name": "Harry Potter", "image": "HarryPotter.jpg" },
         { "name": "Superman", "image": "superman.jpg" }
+      ]
+    },
+    {
+      "slug": "Birds-&-Animals",
+      "name": "Birds & Animals",
+      "tagline": "Whimsical costumes inspired by nature for children and teens.",
+      "image": "birdsandanimals.jpg",
+      "costumes": [
+        { "name": "Bird", "image": "bird.png" },
+        { "name": "Deer", "image": "Deer.png" },
+        { "name": "Dove", "image": "Dove.png" },
+        { "name": "Lion", "image": "lion.png" },
+        { "name": "Peacock", "image": "peacock.png" },
+        { "name": "Penguin", "image": "Penguin.png" },
+        { "name": "Tiger", "image": "Tiger.png" },
+        { "name": "Wolf", "image": "wolf.png" }
+      ]
+    },
+    {
+      "slug": "Mythology",
+      "name": "Mythology",
+      "tagline": "Costumes inspired by mythological characters for children and teens.",
+      "image": "mythology.jpg",
+      "costumes": [
+        { "name": "Dhoti", "image": "Dhoti.png" },
+        { "name": "Hanuman", "image": "hanuman.png" },
+        { "name": "Kavach", "image": "kavach.jpg" },
+        { "name": "Ram Leela mahabharat dress", "image": "ram-Leela-mahabharat-dress.png" },
+        { "name": "Tail and Gada", "image": "Tail-and-Gada.png" },
+        { "name": "Tir with Tarkash", "image": "Tir-with-Tarkash.png" },
+        { "name": "Vanvasi Ram", "image": "vanvasi-Ram.png" }
+      ]
+    },
+    {
+      "slug": "Aashadi-Ekadashi",
+      "name": "Aashadi Ekadashi",
+      "tagline": "Traditional Aashadi Ekadashi costumes for children and teens.",
+      "image": "batman.jpg",
+      "costumes": [
+        { "name": "Sant dress full", "image": "sant-dress-full.png" },
+        { "name": "Vithal dress full", "image": "vithal-dress-full.png" },
+        { "name": "Warkari dress", "image": "warkari-dress.png" }
+      ]
+    },
+    {
+      "slug": "Boys-western",
+      "name": "Boys Western",
+      "tagline": "Stylish western outfits for boys and teens.",
+      "image": "boyswestern.jpg",
+      "costumes": [
+        { "name": "Boys Western 1", "image": "boyWestern1.jpg" },
+        { "name": "Boys Western 2", "image": "boyWestern2.png" }
+      ]
+    },
+    {
+      "slug": "Girl-western",
+      "name": "Girl Western",
+      "tagline": "Stylish western outfits for girls and teens.",
+      "image": "girlwestern.jpg",
+      "costumes": [
+        { "name": "Girl Western 1", "image": "GirlWestern1.jpg" },
+        { "name": "Girl Western 2", "image": "GirlWestern2.png" },
+        { "name": "Girl Western 3", "image": "GirlWestern3.jpg" },
+        { "name": "Unicorn", "image": "Unicorn.png" }
+      ]
+    },
+    {
+      "slug": "Traditional",
+      "name": "Traditional",
+      "tagline": "Traditional costumes for children and teens.",
+      "image": "traditional.jpg",
+      "costumes": [
+        { "name": "Mastani Nauvari", "image": "Mastani-nauvari.png" },
+        { "name": "Shivaji Maharaj", "image": "shivaji-Maharaj.png" },
+        { "name": "Velvet Saree", "image": "velvet-saree.png" }
       ]
     }
   ]
