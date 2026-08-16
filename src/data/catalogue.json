@@ -44,14 +44,13 @@
       "costumes": [
         { "name": "Army", "image": "army.jpg" },
         { "name": "Mangal Pande", "image": "Mangal-pande.png" },
-        { "name": "Gandhi", "image": "gandhi.jpg" },
         { "name": "Navy", "image": "navy.png" },
         { "name": "Police", "image": "police.jpg" },
         { "name": "Red And White Saree", "image": "redandwhitesaree.png" },
-        { "name": "Bal Gangadhar Tilak", "image": "Bal-Gangadhar-Tilak.jpg" },
+        { "name": "Bal Gangadhar Tilak", "image": "Bal-Gangadhar-Tilak.png" },
         { "name": "Gandhiji", "image": "Gandhiji.png" },
         { "name": "Harem Top", "image": "harem-top.png" },
-        { "name": "Tricolour Jacket", "image": "tricolour-jacket.png" },
+        { "name": "Tricolour Jacket", "image": "tricolour-jacket.jpg" },
         { "name": "Jhansi Rani Lakshmi Bai", "image": "Jhansi-Rani-Lakshmi-Bai.png" }
       ]
     },
@@ -68,7 +67,7 @@
         { "name": "Hulk", "image": "hulk.jpg" },
         { "name": "Ironman", "image": "ironman.jpg" },
         { "name": "Spiderman", "image": "spiderman.jpg" },
-        { "name": "Harry Potter", "image": "HarryPotter.jpg" },
+        { "name": "Harry Potter", "image": "HarryPotter.png" },
         { "name": "Superman", "image": "superman.jpg" }
       ]
     },
@@ -130,9 +129,9 @@
       "tagline": "Stylish western outfits for girls and teens.",
       "image": "girlwestern.jpg",
       "costumes": [
-        { "name": "Girl Western 1", "image": "GirlWestern1.jpg" },
+        { "name": "Girl Western 1", "image": "GirlWestern1.png" },
         { "name": "Girl Western 2", "image": "GirlWestern2.png" },
-        { "name": "Girl Western 3", "image": "GirlWestern3.jpg" },
+        { "name": "Girl Western 3", "image": "GirlWestern3.png" },
         { "name": "Unicorn", "image": "Unicorn.png" }
       ]
     },
