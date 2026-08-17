@@ -88,14 +88,7 @@ export function SiteHeader() {
             )}
           </div>
 
-          <Link
-            to="/about"
-            onClick={() => setMenuOpen(false)}
-            className="font-semibold text-foreground transition-colors hover:text-primary"
-            activeProps={{ className: "text-primary" }}
-          >
-            About Us
-          </Link>
+          
           <Link
             to="/contact"
             onClick={() => setMenuOpen(false)}
